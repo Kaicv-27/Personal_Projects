@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href = "{{ url_for('static', filename='style.css') }}"/>
   </head>
   <body>
     <h1>Kai Velasco - Project Portfolio</h1>
     <h2>About Me:</h2>
     <p1>Hello! My name is Kai Velasco and I attend the University of California, San Diego as a first year Mathematics - Computer Science major at Warren College. I aspire to gain experience in full stack software development, cyber security, and machine learning applications. 
     </p1>
-    <script src="script.js"></script>
+    <h2>Projects:</h2>
+    <h3>Final Grade Predictor (Python, HTML/ CSS, JavaScript)</h3>
+    <p2>This served as my inaugural project for my portfolio as part of the Summer Program for Incoming Students (SPIS)
+      which I attended during summer '23 at UCSD. I and my partner, Steven Zeng, used machine learning to create 
+      a web app that takes user input from the text fields in the forms and returns a predicted final grade. The web app allows
+      the user to choose from three algorithms (linear regression, k-nearest neighbors, and random forest) to run their prediction on,
+      which, coupled with the links to the Google Colab notebooks where we made our models, provides a statistical analysis of the accuracy
+      of our models.</p2>
+      <h4>Password Strength Checker</h4>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
   </body>
 </html>
